@@ -4,4 +4,5 @@ console.log(score);
 score = score + 10;
 console.log(score);
 
-const scores:2 = 22; #cannot be changed
+const scores = 22;
+//const cannot be changed, let can*/
