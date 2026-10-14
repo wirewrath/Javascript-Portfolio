@@ -47,3 +47,16 @@ let stats = getStats(5, 6);
 console.log(stats);
 console.log("Sum:", stats.sum);
 console.log("Product:", stats.product);
+
+let attacks = [55, 72, 777, 80];
+console.log(attacks);
+function totalDamage(attacks) {
+    let total = 0;
+    for(let i = 0; i < attacks.length; i ++) {
+        total += attacks[i];       
+    }
+    return total;
+}
+
+let total = totalDamage(attacks);
+console.log("Total damage:", total);
