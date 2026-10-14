@@ -60,3 +60,30 @@ function totalDamage(attacks) {
 
 let total = totalDamage(attacks);
 console.log("Total damage:", total);
+
+
+//adding armor to the equation 
+let attacks = [5, 2, 7, 10];
+console.log(attacks);
+
+function totalDamage(attacks) {
+    let total = 0;
+    for (let i = 0; i < attacks.length; i++) {
+        total += attacks[i];
+    }
+    return total;
+}
+
+let total = totalDamage(attacks);
+console.log("Total damage:", total);
+
+function applyArmor(damage, armor) {
+    let reduced = damage - armor;
+    if (reduced < 0) {
+    reduced = 0;
+}
+    return reduced;
+}
+
+let damageAfterArmor = applyArmor(total, 100);
+console.log("Damage after armor:", damageAfterArmor);
